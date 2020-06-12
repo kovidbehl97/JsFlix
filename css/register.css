@@ -1,0 +1,223 @@
+/* ------------------------------------------------------ */
+
+
+/* -----------------------UTILITIES---------------------- */
+
+
+/*  
+    Main Theme Color: #a35638 (Brown Shade)
+    Footer Main Dark Color: #262626 (Darker)
+    h2 Main Font Color: #4d4646 (Grey Shade)
+*/
+
+
+/* -----------------------UTILITIES---------------------- */
+
+
+/* ------------------------------------------------------ */
+
+
+/* -----------------------CSS RESET---------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* --------------------GLOBAL STYLING-------------------- */
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    height: 100vh;
+    background-image: url("cssImages/registerBackgroundImage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.row {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ------------------------LINKS------------------------- */
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------HEADER------------------------ */
+
+header {
+    height: 10%;
+}
+
+.main-nav {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+}
+
+.nav-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    height: 100%;
+}
+
+.nav-logo {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.8rem;
+    height: 100%;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.nav-logo a {
+    color: white;
+}
+
+.clock-container {
+    height: 100%;
+    /* display: flex; */
+    padding-top: 30px;
+    color: white;
+    font-weight: 300;
+}
+
+/* ------------------------MAIN-------------------------- */
+
+main {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.form-container {
+    width: 400px;
+    margin: 0 auto;
+    /* height: 100%; */
+    /* transform: scale(0.9); */
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.registration-form {
+    padding: 20px 40px;
+    /* height: 80%; */
+    width: 100%;
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    color: white;
+    /* font-size: 1.4rem; */
+}
+
+.form-fields {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-fields label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-fields input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 0.7rem;
+}
+
+.form-fields input:focus {
+    outline: 0;
+    border-color: #777777;
+}
+
+.form-fields input::placeholder {
+    color: #c3c3c3;
+}
+
+.form-fields.success input {
+    border-color: #2ecc71;
+}
+
+.form-fields.error input {
+    border-color: #e74c3c;
+}
+
+.form-fields small {
+    color: #c81912;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-fields.error small {
+    visibility: visible;
+}
+
+.registration-form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    font-size: 0.8rem;
+    padding: 5px;
+    width: 100%;
+    margin-top: 20px;
+    transition: all 0.2s;
+}
+
+.registration-form button:hover {
+    transform: scale(1.02);
+}
+
+
+
+.back-button-container {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    text-align: center;
+    color: white;
+
+}
+
+.back-icon {
+    font-size: 2rem;
+    transition: all 0.2s;
+}
+
+.back-icon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+

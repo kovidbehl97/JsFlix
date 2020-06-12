@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="icon" href="icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>JSFlix | LogIn / SignUp</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="row nav-wrapper">
+                <div class="logo-container">
+                    <p class="nav-logo"><a href="index.html">JSFlix</a></p>
+                </div>
+
+                <div class="clock-container">
+                    <span id="hours">&nbsp;</span> :
+                    <span id="minutes">&nbsp;</span> :
+                    <span id="seconds">&nbsp;</span>&nbsp;
+                    <span id="ampm">&nbsp;</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="registration-form" class="registration-form">
+                <h2>Log In / Sign Up</h2>
+                <div class="form-fields">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-fields">
+                    <label for="email" id="emailLabel">Email</label>
+                    <input type="text" id="email" placeholder="Enter Email">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-fields">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-fields">
+                    <label for="confirmPassword" id="confirmPasswordLabel">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Enter Password Again">
+                    <small>Error Message</small>
+                </div>
+                <button type="submit" id="submit">Sign Up</button>
+                <button id="login">Log In</button>
+                <button id="switch">Log In</button>
+                <button id= "signup">Sign Up</button>
+            </form>
+        </div>
+        
+        <div class="back-button-container">
+            <ion-icon name="arrow-back-outline" class="back-icon"></ion-icon>
+            <p>Return To Home</p>
+        </div>
+    </main>
+
+
+    <!------------------------------JAVASCRIPT FILES---------------------------------->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/clock.js"></script>
+</body>
+</html>
